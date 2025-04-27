@@ -1,0 +1,39 @@
+```xml
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f8e287; }
+      .circle { stroke: #c49c1a; stroke-width: 15; fill: none; }
+      .text { fill: #c49c1a; font-family: Georgia, serif; font-weight: bold; }
+      .deviz { fill: #6e5412; font-family: Georgia, serif; font-size: 18px; }
+    </style>
+  </defs>
+
+  <!-- Фон -->
+  <circle cx="250" cy="250" r="240" class="bg"/>
+  <circle cx="250" cy="250" r="220" class="circle"/>
+
+  <!-- Юрта (стилизованный символ) -->
+  <path d="M250,160 L200,240 H300 Z M225,240 V270 H275 V240" fill="#c49c1a"/>
+
+  <!-- Инициалы -->
+  <text x="250" y="320" text-anchor="middle" font-size="60" class="text">Zh</text>
+
+  <!-- Девиз -->
+  <text x="250" y="460" text-anchor="middle" class="deviz">“Deep Roots — Strong Tree”</text>
+<!-- Орнамент по кругу (простая стилизация) -->
+  <circle cx="250" cy="250" r="210" stroke-dasharray="8 12" stroke="#c49c1a" stroke-width="2" fill="none" />
+
+  <!-- Надпись по кругу -->
+  <text text-anchor="middle" font-size="14" fill="#6e5412">
+    <textPath href="#curve" startOffset="50%">
+      Coat of Arms of the Zhaparkulov Family
+    </textPath>
+  </text>
+
+  <!-- Кривая для надписи по кругу -->
+  <defs>
+    <path id="curve" d="M 80,250 A 170,170 0 1,1 420,250" fill="none"/>
+  </defs>
+</svg>
+```
